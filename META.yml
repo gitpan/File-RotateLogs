@@ -21,9 +21,9 @@ no_index:
     - t
     - xt
 requires:
-  Mouse: 0
-  Proc::Daemon: 0
+  Mouse: 1.02
+  Proc::Daemon: 0.14
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/kazeburo/File-RotateLogs.git
-version: 0.01
+version: 0.02
