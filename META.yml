@@ -3,13 +3,14 @@ abstract: 'File logger supports log rotation'
 author:
   - 'Masahiro Nagano <kazeburo {at} gmail.com>'
 build_requires:
-  ExtUtils::MakeMaker: 6.36
+  Test::MockTime: 0
   Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.36
-distribution_type: module
-dynamic_config: 1
-generated_by: 'Module::Install version 1.06'
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Minilla/v0.4.6, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -17,13 +18,25 @@ meta-spec:
 name: File-RotateLogs
 no_index:
   directory:
-    - inc
     - t
     - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+provides:
+  File::RotateLogs:
+    file: lib/File/RotateLogs.pm
+    version: 0.03
 requires:
   Mouse: 1.02
   Proc::Daemon: 0.14
 resources:
-  license: http://dev.perl.org/licenses/
+  bugtracker: https://github.com/kazeburo/File-RotateLogs/issues
+  homepage: https://github.com/kazeburo/File-RotateLogs
   repository: git://github.com/kazeburo/File-RotateLogs.git
-version: 0.02
+version: 0.03
+x_contributors:
+  - 'SUZUKI Masashi <m15.suzuki.masashi@gmail.com>'
+  - 'Masahiro Nagano <kazeburo@gmail.com>'
