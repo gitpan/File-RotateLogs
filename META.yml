@@ -28,7 +28,7 @@ no_index:
 provides:
   File::RotateLogs:
     file: lib/File/RotateLogs.pm
-    version: 0.03
+    version: 0.04
 requires:
   Mouse: 1.02
   Proc::Daemon: 0.14
@@ -36,7 +36,7 @@ resources:
   bugtracker: https://github.com/kazeburo/File-RotateLogs/issues
   homepage: https://github.com/kazeburo/File-RotateLogs
   repository: git://github.com/kazeburo/File-RotateLogs.git
-version: 0.03
+version: 0.04
 x_contributors:
   - 'SUZUKI Masashi <m15.suzuki.masashi@gmail.com>'
   - 'Masahiro Nagano <kazeburo@gmail.com>'
