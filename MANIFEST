@@ -8,5 +8,6 @@ lib/File/RotateLogs.pm
 t/00_compile.t
 t/01_basic.t
 t/02_rotate.t
+t/03_pathtiny.t
 META.yml
 MANIFEST
