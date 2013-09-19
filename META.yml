@@ -6,6 +6,7 @@ build_requires:
   Test::MockTime: 0
   Test::More: 0
   Test::Requires: 0
+  Time::HiRes: 0
 configure_requires:
   CPAN::Meta: 0
   CPAN::Meta::Prereqs: 0
@@ -29,7 +30,7 @@ no_index:
 provides:
   File::RotateLogs:
     file: lib/File/RotateLogs.pm
-    version: 0.05
+    version: 0.06
 requires:
   Mouse: 1.02
   Proc::Daemon: 0.14
@@ -37,7 +38,7 @@ resources:
   bugtracker: https://github.com/kazeburo/File-RotateLogs/issues
   homepage: https://github.com/kazeburo/File-RotateLogs
   repository: git://github.com/kazeburo/File-RotateLogs.git
-version: 0.05
+version: 0.06
 x_contributors:
   - 'SUZUKI Masashi <m15.suzuki.masashi@gmail.com>'
   - 'Masahiro Nagano <kazeburo@gmail.com>'
