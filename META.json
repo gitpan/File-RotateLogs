@@ -4,8 +4,10 @@
       "Masahiro Nagano <kazeburo {at} gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.6.4",
-   "license" : "perl_5",
+   "generated_by" : "Minilla/v0.8.4",
+   "license" : [
+      "perl_5"
+   ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
@@ -19,18 +21,11 @@
          "share",
          "eg",
          "examples",
-         "author"
+         "author",
+         "builder"
       ]
    },
    "prereqs" : {
-      "build" : {
-         "requires" : {
-            "Test::MockTime" : "0",
-            "Test::More" : "0",
-            "Test::Requires" : "0",
-            "Time::HiRes" : "0"
-         }
-      },
       "configure" : {
          "requires" : {
             "CPAN::Meta" : "0",
@@ -51,12 +46,21 @@
             "Mouse" : "1.02",
             "Proc::Daemon" : "0.14"
          }
+      },
+      "test" : {
+         "requires" : {
+            "Capture::Tiny" : "0.23",
+            "Test::MockTime" : "0",
+            "Test::More" : "0",
+            "Test::Requires" : "0",
+            "Time::HiRes" : "0"
+         }
       }
    },
    "provides" : {
       "File::RotateLogs" : {
          "file" : "lib/File/RotateLogs.pm",
-         "version" : "0.06"
+         "version" : "0.07"
       }
    },
    "release_status" : "stable",
@@ -70,7 +74,7 @@
          "web" : "https://github.com/kazeburo/File-RotateLogs"
       }
    },
-   "version" : "0.06",
+   "version" : "0.07",
    "x_contributors" : [
       "SUZUKI Masashi <m15.suzuki.masashi@gmail.com>",
       "Masahiro Nagano <kazeburo@gmail.com>"
